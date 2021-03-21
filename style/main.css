@@ -11,10 +11,16 @@
 
 body{
     background-color: var(--preta);
-    font-family:'Times New Roman', Times, serif;
+    font-family:'Arial', Times, Serif;
     color: white;
 }
 
+header{
+    width: 100%;
+    position: fixed;
+
+    background-color: var(--preta);
+}
 header .container{
     margin-left: 20px;
     display: flex;
@@ -43,9 +49,8 @@ header nav a:hover{
     font-size: 16px;
     background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../imagens/suits.jpg');
     
-    position: absolute;
     width: 100%;
-    height: 400px;
+    height: 50%;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -59,7 +64,7 @@ header nav a:hover{
     margin-bottom: 40px;
 }
 .titulo{
-    margin-top: 20%;
+    margin-top: 30%;
     font-size: 60px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -69,8 +74,9 @@ header nav a:hover{
     border: none;
     color: white;
 
-    padding:15px 20px; /*se eu botar um valor, ele defini para todos os lados; se eu botar 2 valores, ele define os verticais e o outro os laterais */
+    padding:15px 30px; /*se eu botar um valor, ele defini para todos os lados; se eu botar 2 valores, ele define os verticais e o outro os laterais */
     margin-right: 15px;
+    margin-bottom: 10px;
     font-size: 12px;
 
     cursor: pointer;
@@ -100,4 +106,8 @@ header nav a:hover{
     height: 100%;
     width: 100%;
     display: block;
+}
+
+.carrossel-filmes{
+    margin-top: 5px;
 }
